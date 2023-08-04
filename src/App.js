@@ -34,15 +34,15 @@ function App() {
 
       {/* Barra Lateral  */}
       <aside className="lateral">
-        <Buscador />
+        <Buscador listadoState={listadoState} setListadoState={setListadoState} />
 
         <Crear setListadoState={setListadoState} />
       </aside>
 
       {/* Pie de Página  */}
-      <footer className="footer">
+      {/* <footer className="footer">
         &copy; Sergio Sorrosal Gayán
-      </footer>
+      </footer> */}
 
     </div>
   );

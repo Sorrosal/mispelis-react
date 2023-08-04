@@ -1,5 +1,5 @@
 body {
-  background: #d1defa;
+  background: #f6f7f9;
   font-family: sans-serif, Arial, Helvetica;
   text-align: center;
   padding: 0px;
@@ -8,15 +8,14 @@ body {
 
 .layout {
   width: 100%;
-  height: auto;
   display: grid;
   grid-template-areas:
     "header header header header"
     "nav nav nav nav"
     "content content content lateral"
-    "footer footer footer footer"
+
   ;
-  grid-template-rows: 100px 70px auto 70px;
+  grid-template-rows: 100px 70px auto;
 }
 
 .header {
@@ -87,6 +86,7 @@ body {
   grid-area: content;
   background: #f6f7f9;
   display: flex;
+  min-height: 100%;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -204,11 +204,16 @@ input[type="button"] {
   text-align: left;
   line-height: 68px;
   padding-left: 25px;
+  margin-top: auto;
 }
 
 .footer a {
   color: #0b468a;
   text-decoration: none;
+}
+
+.no_encontrado {
+  color: #9b0202;
 }
 
 @media (max-width: 1085px) {
