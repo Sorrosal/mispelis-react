@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function Editar({ peli, conseguirPeliculas, setEditar, setListadoState }) {
     const titulo_componente = 'Editar película'
 
@@ -25,7 +24,7 @@ export default function Editar({ peli, conseguirPeliculas, setEditar, setListado
         pelis_almacenadas[indice] = peli_actualizada;
 
         // Guardar el nuevo array de objetos en el localstorage
-        localStorage.setItem("pelis",)
+        localStorage.setItem("pelis", JSON.stringify(pelis_almacenadas));
 
         // Actualizar estados
         setListadoState(pelis_almacenadas);
